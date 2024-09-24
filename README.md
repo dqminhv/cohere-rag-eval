@@ -4,7 +4,7 @@
 
 This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai. It offers a comprehensive toolkit for evaluating and refining Retrieval-Augmented Generation (RAG) pipelines built from Cohere toolkit. It utilizes RAGAS and LangSmith for evaluation. 
 
-**Core Functionalities:**
+## **Core Functionalities:**
 
 * **Synthetic Test Data Generation:**
   - Create diverse and challenging question-answer pairs using the RAGAS framework.
@@ -26,7 +26,7 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
     - **Pre-Production:** Employ predefined test data and ground truth to assess general performance metrics like answer relevancy and faithfulness.
     - **Post-Production:** Analyze real-world user queries and system responses to understand user experience and identify areas for improvement.
 
-**Getting Started:**
+## **Getting Started:**
 
 1. **Prerequisites:**
     - Install Python (version 3.6 or later recommended).
@@ -37,9 +37,13 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
     - Launch Jupyter Notebook and navigate to the repository directory.
     - Each notebook provides detailed instructions and expected inputs to facilitate your exploration.
 
-**Envisioning the Future:**
+## **Envisioning the Future:**
 
 * **Automated Testing:** Integrate automated testing tools to streamline the evaluation process and ensure consistent performance over time.
 * **Benchmarking:** Incorporate standardized benchmarks for RAG performance, enabling comparisons with other systems and tracking progress.
 * **Deployment Pipeline:** Develop a robust deployment pipeline to seamlessly integrate the optimized RAG system into the production environment.
 * **Visualization Tools:** Implement visualization tools to provide intuitive insights into the behavior and decision-making processes within the RAG pipeline.
+
+## **License:**
+
+This repository is distributed under the MIT License. Refer to the LICENSE file for details.
