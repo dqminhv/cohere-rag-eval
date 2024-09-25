@@ -8,23 +8,23 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
 
 * **Synthetic Test Data Generation:**
   - Create diverse and challenging question-answer pairs using the RAGAS framework.
-  - This ensures a thorough evaluation of your RAG system's capabilities.  You can find the implementation in the [1-ragas-synthetic-test-data-generation.ipynb](1-ragas-synthetic-test-data-generation.ipynb) notebook
+  - This ensures a thorough evaluation of your RAG system's capabilities.  You can find the implementation in this [synthetic test data generation notebook](/notebook/1-ragas-synthetic-test-data-generation.ipynb) 
 
 * **RAG Component Optimization:**
   - Delve into the optimization of various RAG components, enabling you to fine-tune your system for optimal performance:
-    - **a) Chunking Strategy:**  Investigate how different approaches to splitting text into chunks impact retrieval and generation quality.
-    - **b) Prompt Templates:**  Experiment with various prompts to guide the large language model (LLM) and influence the quality and direction of its responses.
-    - **c) Query Transformation:**  Explore techniques for transforming user queries into forms that enhance retrieval and generation effectiveness.
-    - **d) Reranking:**  Evaluate the impact of reranking retrieved documents on the final response selection process.
+    - **a) Chunking Strategy:**  Investigate how different approaches to splitting text into chunks impact retrieval and generation quality. Refer to this [Chunking strategy optimization notebook](/notebook/optimization/7.1-rag-opimization-chunking-strategy.ipynb)
+    - **b) Prompt Templates:**  Experiment with various prompts to guide the large language model (LLM) and influence the quality and direction of its responses. Refer to this [Prompt optimization notebook](/notebook/optimization/5-rag-prompt-opimization.ipynb)
+    - **c) Query Transformation:**  Explore techniques for transforming user queries into forms that enhance retrieval and generation effectiveness. Refer to these notebooks [1](/notebook/optimization/7.2-rag-opimization-cohere-query-transformation.ipynb), [2](/notebook/optimization/7.3-rag-opimization-hyde.ipynb), [3](/notebook/optimization/7.4-rag-opimization-multi-query.ipynb) 
+    - **d) Reranking:**  Evaluate the impact of reranking retrieved documents on the final response selection process. Refer to this [notebook](/notebook/optimization/7.5-rag-opimization-rerank.ipynb)
 
 * **Chat History Extraction:**
-  - Extract chat history from a running Cohere toolkit Docker container for post-production evaluation.
+  - Extract chat history from a running Cohere toolkit Docker container for post-production evaluation. Refer to this [chat history extraction notebook](/notebook/2-chat-history-extraction.ipynb)
   - Analyze real-world user interactions to gauge system effectiveness.
 
 * **Multi-Stage Evaluation:**
   - Conduct evaluations at different stages of the RAG pipeline's lifecycle:
-    - **Pre-Production:** Employ predefined test data and ground truth to assess general performance metrics like answer relevancy and faithfulness.
-    - **Post-Production:** Analyze real-world user queries and system responses to understand user experience and identify areas for improvement.
+    - **[Pre-Production](/notebook/3-cohere-toolkit-rag-pre-prod-eval.ipynb):** Employ predefined test data and ground truth to assess general performance metrics like answer relevancy and faithfulness. Real test run and results can be found [here](/notebook/pre-production%20evaluation/)
+    - **[Post-Production](/notebook/4-cohere-toolkit-rag-post-prod-eval.ipynb):** Analyze real-world user queries and system responses to understand user experience and identify areas for improvement.
 
 ## **Getting Started:**
 
