@@ -8,7 +8,7 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
 
 * **Synthetic Test Data Generation:**
   - Create diverse and challenging question-answer pairs using the RAGAS framework.
-  - This ensures a thorough evaluation of your RAG system's capabilities.
+  - This ensures a thorough evaluation of your RAG system's capabilities.  You can find the implementation in the [1-ragas-synthetic-test-data-generation.ipynb](1-ragas-synthetic-test-data-generation.ipynb) notebook
 
 * **RAG Component Optimization:**
   - Delve into the optimization of various RAG components, enabling you to fine-tune your system for optimal performance:
