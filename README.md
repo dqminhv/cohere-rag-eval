@@ -9,6 +9,7 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
 * **Synthetic Test Data Generation:**
   - Create diverse and challenging question-answer pairs using the RAGAS framework.
   - This ensures a thorough evaluation of your RAG system's capabilities.  You can find the implementation in this [synthetic test data generation notebook](/notebook/1-ragas-synthetic-test-data-generation.ipynb) 
+  - Test datatsets for all of the evaluation tests in this repo are stored [here](/data-test/test-dataset/)
 
 * **RAG Component Optimization:**
   - Delve into the optimization of various RAG components, enabling you to fine-tune your system for optimal performance:
@@ -16,6 +17,7 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
     - **b) Prompt Templates:**  Experiment with various prompts to guide the large language model (LLM) and influence the quality and direction of its responses. Refer to this [Prompt optimization notebook](/notebook/optimization/5-rag-prompt-opimization.ipynb)
     - **c) Query Transformation:**  Explore techniques for transforming user queries into forms that enhance retrieval and generation effectiveness. Refer to these notebooks [1](/notebook/optimization/7.2-rag-opimization-cohere-query-transformation.ipynb), [2](/notebook/optimization/7.3-rag-opimization-hyde.ipynb), [3](/notebook/optimization/7.4-rag-opimization-multi-query.ipynb) 
     - **d) Reranking:**  Evaluate the impact of reranking retrieved documents on the final response selection process. Refer to this [notebook](/notebook/optimization/7.5-rag-opimization-rerank.ipynb)
+  - Test results for optimization process can be found [here](/data-test/eval-result/optimization-test-result/)
 
 * **Chat History Extraction:**
   - Extract chat history from a running Cohere toolkit Docker container for post-production evaluation. Refer to this [chat history extraction notebook](/notebook/2-chat-history-extraction.ipynb)
@@ -23,8 +25,11 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
 
 * **Multi-Stage Evaluation:**
   - Conduct evaluations at different stages of the RAG pipeline's lifecycle:
-    - **[Pre-Production](/notebook/3-cohere-toolkit-rag-pre-prod-eval.ipynb):** Employ predefined test data and ground truth to assess general performance metrics like answer relevancy and faithfulness. Real test run and results can be found [here](/notebook/pre-production%20evaluation/)
-    - **[Post-Production](/notebook/4-cohere-toolkit-rag-post-prod-eval.ipynb):** Analyze real-world user queries and system responses to understand user experience and identify areas for improvement.
+    - **[Pre-Production](/notebook/3-cohere-toolkit-rag-pre-prod-eval.ipynb):** Employ predefined test data and ground truth to assess general performance metrics like answer relevancy and faithfulness. Real test run and results can be found [here](/notebook/pre-production%20evaluation/) and [here](/data-test/eval-result/)
+    - **[Post-Production](/notebook/4-cohere-toolkit-rag-post-prod-eval.ipynb):** Analyze real-world user queries and system responses to understand user experience and identify areas for improvement. A sample test run and result can be found [here](/notebook/4-cohere-toolkit-rag-post-prod-eval.ipynb) and [here](/data-test/eval-result/eval_result_post_prod_test_dataset_hr_openai_deployment.csv)
+
+* **LangSmith**
+  - Evaluation test run can be store and run within [LangSmith](https://smith.langchain.com/) account.
 
 ## **Getting Started:**
 
