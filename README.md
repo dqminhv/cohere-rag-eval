@@ -61,4 +61,4 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
 This repository is distributed under the MIT License. Refer to the LICENSE file for details.
 
 ## **Appendix**
-[embed]D:\Document\GitHub\cohere-rag-eval\data-test\eval-result\Evaluation Results Summary.pdf[/embed]
+* Evaluation results summary can be found [here](/data-test/eval-result/Evaluation%20Results%20Summary.pdf)
