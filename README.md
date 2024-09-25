@@ -2,7 +2,7 @@
 
 **RAG Pipeline Evaluation and Optimization**
 
-This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai. It offers a comprehensive toolkit for evaluating and refining Retrieval-Augmented Generation (RAG) pipelines built from Cohere toolkit. It utilizes RAGAS and LangSmith for evaluation. 
+This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai. It offers a comprehensive toolkit for evaluating and refining Retrieval-Augmented Generation (RAG) pipelines built from Cohere toolkit. It utilizes RAGAS and LangSmith for evaluation, and . 
 
 ## **Core Functionalities:**
 
@@ -18,6 +18,13 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
     - **c) Query Transformation:**  Explore techniques for transforming user queries into forms that enhance retrieval and generation effectiveness. Refer to these notebooks [1](/notebook/optimization/7.2-rag-opimization-cohere-query-transformation.ipynb), [2](/notebook/optimization/7.3-rag-opimization-hyde.ipynb), [3](/notebook/optimization/7.4-rag-opimization-multi-query.ipynb) 
     - **d) Reranking:**  Evaluate the impact of reranking retrieved documents on the final response selection process. Refer to this [notebook](/notebook/optimization/7.5-rag-opimization-rerank.ipynb)
   - Test results for optimization process can be found [here](/data-test/eval-result/optimization-test-result/)
+  - To evaluate the effectiveness of different optimization configurations, Rank-Based Methods can be employed. This approach involves the following steps:
+
+    - Ranking Individual Options: For each performance score, assign a descending rank to each optimization option. A higher rank indicates better performance.
+    - Calculating Average Ranks: Determine the average rank for each optimization option across all performance scores.
+    - Identifying the Best Option: The optimization option with the highest average rank is typically considered the most effective, as a higher rank signifies superior performance.
+    By using Rank-Based Methods, you can systematically compare and select the optimization configuration that yields the most favorable results.
+
 
 * **Chat History Extraction:**
   - Extract chat history from a running Cohere toolkit Docker container for post-production evaluation. Refer to this [chat history extraction notebook](/notebook/2-chat-history-extraction.ipynb)
