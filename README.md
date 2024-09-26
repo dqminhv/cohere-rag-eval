@@ -35,6 +35,14 @@ This repository is a part of Enterprise-Search-Chatbot project at fellowship.ai.
     - **[Pre-Production](/notebook/3-cohere-toolkit-rag-pre-prod-eval.ipynb):** Employ predefined test data and ground truth to assess general performance metrics like answer relevancy and faithfulness. Real test run and results can be found [here](/notebook/pre-production%20evaluation/) and [here](/data-test/eval-result/)
     - **[Post-Production](/notebook/4-cohere-toolkit-rag-post-prod-eval.ipynb):** Analyze real-world user queries and system responses to understand user experience and identify areas for improvement. A sample test run and result can be found [here](/notebook/4-cohere-toolkit-rag-post-prod-eval.ipynb) and [here](/data-test/eval-result/eval_result_post_prod_test_dataset_hr_openai_deployment.csv)
 
+* **Evaluation metrics**:
+  - **Answer Relevancy**: Assesses how well the generated answer aligns with the given prompt. Incomplete or redundant answers receive lower scores, while higher scores indicate stronger relevancy.
+  - **Faithfulness**: Measures the factual consistency of the generated answer with the retrieved context. It is calculated using both the answer and the context, with scores ranging from 0 to 1, where higher values indicate greater accuracy.
+  - **Context Recall**: Evaluates how many relevant documents or pieces of information were successfully retrieved, emphasizing the importance of capturing all key details. Higher recall indicates fewer relevant documents were missed. Since recall focuses on not overlooking important content, it requires a reference (ground truth) for comparison during calculation.
+  - **Context Precision**: measures the proportion of relevant chunks within the retrieved contexts. It is calculated as the average of precision@k for each chunk, where precision@k is the ratio of relevant chunks at rank k to the total number of chunks at that rank.
+  
+  For pre-production evaluation, we use all four metrics. In post-production, since we lack ground truth for user queries, we evaluate using only three metrics: Answer Relevancy, Faithfulness, and Context Precision.
+
 * **LangSmith**
   - Evaluation test run can be store and run within [LangSmith](https://smith.langchain.com/) account.
 
